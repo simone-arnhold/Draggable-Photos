@@ -95,10 +95,7 @@ input {
   box-shadow: 2.0px 4.0px 4.0px hsl(0deg 0% 0% / 0.44);
   transition: box-shadow 100ms ease-out;
   transition: transform 100ms ease-out;
-  /* box-shadow: 10.0px 10.0px 4.0px hsl(0deg 0% 0% / 0.44); */
-  /* box-shadow: 0 0 10px 4px rgba(0,0,0,0.7); */
-  /* box-shadow: 0 0 20px 6px rgba(0,0,0,0.2); */
-  /* transform: scale(.9); */
+  /* transition: padding 100ms ease-in; */
 }
 
 .no-frame {
