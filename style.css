@@ -96,11 +96,13 @@ input {
   transition: box-shadow 100ms ease-out, 
     transform 100ms ease-out, 
     padding 200ms ease-in-out,
-    opacity 200ms ease-out;
+    opacity 200ms ease-out,
+    filter 200ms ease-out;
 }
 
 .photo-container.hide {
   opacity: 0;
+  filter: alpha(opacity=0);
 }
 
 .no-frame {
