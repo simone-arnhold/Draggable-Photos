@@ -1,1 +1,1 @@
-Live Demo: https://simone-arnhold.github.io/ -Photos/
+Live Demo: https://simone-arnhold.github.io/Draggable-Photos/
