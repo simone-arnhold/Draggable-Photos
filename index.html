@@ -18,25 +18,29 @@
             <input type="file" accept="image/*" id="imgInp">
         </form>
         
-            <i class="fa-solid fa-square fa-2x" id="frame-selector"></i>
+            <i class="fa-solid fa-square fa-2x" id="frame-selector"></i> 
+            <!-- todo remove draggable -->
     </header>
     
 
     <div id="main-space">
 
-        <i class="fa-solid fa-trash fa-6x" 
-        ondrop="dropped(event, this.id)" 
-        ondragover="dragOver(event, this.id)"
-        ondragleavea="stopDrop(event, this.id)"
-        ondragend="disableDrop(event)">
-        </i>
+        <i class="fa-solid fa-trash fa-6x"></i>
 
-        <div class="photo-container" >
-            <img src="resources/Plant-On-White-Ceramic-Vase.jpg" alt="" class="photo" draggable="true" ondragstart="dragStart(event)">
+        <!-- <div class="photo-container">
+            <img src="resources/Plant-On-White-Ceramic-Vase.jpg" alt="" class="photo"  ondragstart="dragStart(event)">
+        </div> -->
+        
+        <div class="photo-container">
+            <img src="resources/rocks.jpg" alt="" class="photo">
         </div>
         
-        <div class="photo-container" >
-            <img src="resources/rocks.jpg" alt="" class="photo">
+        <div class="photo-container">
+            <img src="resources/nature.jpg" alt="" class="photo">
+        </div>
+
+        <div class="photo-container">
+            <img src="resources/Laptop-beside-Peach-Color.jpg" alt="" class="photo">
         </div>
     </div>
 
