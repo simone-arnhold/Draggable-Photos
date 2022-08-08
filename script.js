@@ -65,6 +65,14 @@ function dragElement(elmnt) {
   }
 
   function closeDragElement() {
+    //check if trash icon is being hovered, if so then delete elmnt
+    if (trashIcon.matches(":hover")) {
+      elmnt.classList.add("class", "hide") //for
+      setTimeout(() => {
+        elmnt.remove()
+      }, 220) //milliseconds
+    }
+
     // trash invisible
     hideTrashIcon()
 
@@ -128,26 +136,3 @@ frameSelector.addEventListener("click", () => {
     noFrameEnabled = false
   }
 })
-
-//trash drag and drop
-// function dragOver(ev) {
-//   ev.preventDefault()
-//   ev.target.style.background = "blue"
-// }
-
-// function stopDrop(ev) {
-//   ev.preventDefault()
-//   ev.target.style.background = "red"
-// }
-
-// function dragStart(ev) {
-//   ev.dataTransfer.setData("text", ev.target.id)
-// }
-
-// function dropped(ev) {
-//   ev.preventDefault()
-//   var data = ev.dataTransfer.getData("Text")
-//   //ev.target.appendChild(document.getElementById(data));
-//   document.getElementById(data).style.display = "none"
-//   ev.target.style.background = "green"
-// }
