@@ -85,7 +85,7 @@ input {
   z-index: 1;
   cursor: pointer;
   min-width: 100px;
-  max-width: 300px;
+  max-width: 45vw;
   /* max-height: 400px; */
   border-radius: 2px;
   background-color: #fff;
