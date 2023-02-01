@@ -28,7 +28,7 @@ addEventListener("DOMContentLoaded", () => {
       // if (!photoResizerSelector.classList.contains("selected")) {
       // e.stopPropagation()
       // } else {
-      elmnt.onpointerdown = dragpointerDown
+      elmnt.onmousedown = dragMouseDown
       // }
       function removeOnTopFromOthers() {
         photosOnTop = document.querySelectorAll(".on-top")
@@ -37,7 +37,7 @@ addEventListener("DOMContentLoaded", () => {
         })
       }
 
-      function dragpointerDown(e) {
+      function dragMouseDown(e) {
         //trash visible
         showTrashIcon()
 
@@ -53,8 +53,8 @@ addEventListener("DOMContentLoaded", () => {
 
         pos3 = e.clientX
         pos4 = e.clientY
-        document.onpointerup = closeDragElement
-        document.onpointermove = elementDrag
+        document.onmouseup = closeDragElement
+        document.onmousemove = elementDrag
       }
 
       function elementDrag(e) {
@@ -82,14 +82,14 @@ addEventListener("DOMContentLoaded", () => {
         // trash invisible
         hideTrashIcon()
 
-        //stop moving when pointer button is released
+        //stop moving when mouse button is released
         elmnt.classList.toggle("clicked")
 
         elmnt.style.transform = "scale(1)"
         elmnt.style.boxShadow = "2.0px 4.0px 4.0px hsl(0deg 0% 0% / 0.44)"
 
-        document.onpointerup = null
-        document.onpointermove = null
+        document.onmouseup = null
+        document.onmousemove = null
       }
     }
 

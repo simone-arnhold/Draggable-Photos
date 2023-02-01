@@ -30,7 +30,6 @@ body {
   /* margin-bottom: 20px; */
   padding: 16px;
   background-color: hsla(0, 0%, 19%, 0.514);
-
 }
 
 input {
@@ -90,13 +89,13 @@ input {
   cursor: pointer;
 }
 
-
 .photo-container {
   position: absolute;
   z-index: 1;
   cursor: pointer;
   min-width: 100px;
   width: 40vw;
+  resize: both;
   /* max-width: 45vw; */
   /* max-height: 400px; */
   border-radius: 2px;
@@ -105,16 +104,12 @@ input {
   /* padding: 10px 10px 35px 10px; */
   padding: 5px 5px 5px 5px;
   /* padding: 0px; */
-  box-shadow: 2.0px 4.0px 4.0px hsl(0deg 0% 0% / 0.44);
+  box-shadow: 2px 4px 4px hsl(0deg 0% 0% / 0.44);
   /* resize: both; */
   overflow: hidden;
 
-  
-  transition: box-shadow 100ms ease-out, 
-    transform 100ms ease-out, 
-    padding 200ms ease-in-out,
-    opacity 200ms ease-out,
-    filter 200ms ease-out;
+  transition: box-shadow 100ms ease-out, transform 100ms ease-out,
+    padding 200ms ease-in-out, opacity 200ms ease-out, filter 200ms ease-out;
 }
 
 .photo-container.hide {
@@ -129,13 +124,13 @@ input {
 .on-top {
   z-index: 50;
 }
- 
+
 .photo {
   display: block;
   position: relative;
   object-fit: cover;
   top: 0px;
-  left: 0px;  
+  left: 0px;
   width: 100%;
   height: 100%;
 }
