@@ -1,5 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 
+@media only screen and (max-width: 750px) {
+  .photo-container {
+    max-width: 90vw;
+    max-height: 30vh;
+  }
+
+  .fa-trash {
+    display: none !important;
+  }
+}
+
 * {
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
@@ -94,10 +105,11 @@ input {
   z-index: 1;
   cursor: pointer;
   min-width: 100px;
-  width: 40vw;
-  resize: both;
+  height: 40vh;
+  /* width: 40vw; */
+  resize: none;
   /* max-width: 45vw; */
-  /* max-height: 400px; */
+  /* max-height: 50vh; */
   border-radius: 2px;
   background-color: #fff;
   /* border: 5px 5px 10px 5px; */
@@ -119,6 +131,10 @@ input {
 
 .no-frame {
   padding: 0px;
+}
+
+#frame-selector {
+  z-index: 30;
 }
 
 .on-top {
